@@ -14,7 +14,7 @@
 
 ## 사용법
 
-### # 1 eslint가 읽은 package.json, .eslintrc, .eslintrc.js 에서 정의
+### # 1 eslint 바라보는 package.json, .eslintrc, .eslintrc.js 에서 정의
   
   `#1-1`, `#1-2` 둘 중 하나만 넣어주세요.
 
@@ -106,8 +106,6 @@
   ```bash
   eslint --ext .jsx,.js,.tsx,.ts src/ --fix
   ```
-  
-----
 
 ## webpack 사용시
 
@@ -141,9 +139,7 @@
   }
   ```
 
-----
-
-### 추가사항
+## 추가사항 내용
 
 - 상대경로 -> 절대경로 설정(baseUrl)
 
@@ -184,17 +180,11 @@ webpack에서 babel을 사용 할 경우 : ${root}/${.babelrc or config} [babel-
 {
   "plugins": [
     ["module-resolver", {
-      "root": ["./src"],
-      "alias": {
-        "test": "./test",
-        "underscore": "lodash"
-      }
+      "root": ["./src"]
     }]
   ]
 }
 ```
-
-----
 
 ## .eslintrc.js 옵션 분석
 
