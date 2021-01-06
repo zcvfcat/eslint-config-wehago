@@ -15,9 +15,10 @@ module.exports = {
     'indent': ['error', 2], // 인덴트 2
     'no-unused-vars': ['warn'], // 안 쓰는 변수 의 경우 warn
     'object-curly-spacing': ['error', 'always', { 'objectsInObjects': false }], // {a:1} -> { a:1 }
-    'quote-props': 'off', // {'a':1} or {a:1}
+    'quote-props': 'off', // {'a': 1} or { a: 1 }
     'eol-last': 'off', // semicolon과 호환씨 문제
     'require-jsdoc': 'off', // jsx와 호환안됨
+    'valid-jsdoc': 'off', // jsdoc 문서 작성시 오류 죽이기
     'max-len': [
       'error',
       {
@@ -27,6 +28,5 @@ module.exports = {
       },
     ],
     'comma-spacing': ['error', { before: false, after: true }], // 콤마 스페이스
-    'valid-jsdoc': 'off', // jsdoc 문서 작성시 오류 죽이기
   },
 };

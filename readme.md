@@ -7,9 +7,13 @@
 > 참고자료 [POIEMAWEB](https://poiemaweb.com/eslint)
 
 - eslint-config-wehago 설치
+
   - 패키지 매니저 npm일 경우
+
     >`npm i -D eslint-config-wehago`
+
   - 패키지 매니저 yarn일 경우
+  
     >`yarn add -D eslint-config-wehago`
 
 ## 사용법
