@@ -22,11 +22,13 @@ module.exports = {
     'max-len': [
       'error',
       {
-        code: 150,
+        code: 350,
         tabWidth: 2,
         ignoreUrls: true,
       },
     ],
     'comma-spacing': ['error', { before: false, after: true }], // 콤마 스페이스
+    'new-cap': 'off',
+    'space-infix-ops': ['error', { 'int32Hint': false }],
   },
 };
