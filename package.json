@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-wehago",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "wehago eslint configuration",
   "homepage": "https://github.com/zcvfcat/eslint-config-wehago",
   "repository": {
