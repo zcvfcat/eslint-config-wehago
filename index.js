@@ -4,8 +4,9 @@ module.exports = {
     './config/eslint.js',
     './config/babel.js',
     './config/prettier.js',
+    './config/jest.js',
   ],
-  plugins: ['babel', '@typescript-eslint', 'prettier'],
+  plugins: ['babel', '@typescript-eslint', 'prettier', 'jest'],
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2021,
@@ -28,6 +29,11 @@ module.exports = {
           jsx: true,
         },
       },
+    },
+    {
+      files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
+      extends: ['plugin:jest/recommended'],
+      env: { 'jest/globals': true },
     },
   ],
   settings: {

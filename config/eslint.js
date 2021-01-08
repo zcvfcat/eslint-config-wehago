@@ -6,6 +6,7 @@ module.exports = {
     jest: true,
     node: true,
   },
+  root: true,
   globals: {
     $: true,
   },
