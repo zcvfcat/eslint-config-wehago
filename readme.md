@@ -69,8 +69,8 @@ prettier의 경우 문서의 논리만 정하는 포맷팅 기능을 가짐
 
   ```json
   {
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.formatOnSave": true,
     // "eslint.format.enable": true,
     // "[javascript]": {
     //   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -92,6 +92,8 @@ prettier의 경우 문서의 논리만 정하는 포맷팅 기능을 가짐
 
   - html, css, 기타의 경우 prettier를 사용
   - js, ts 의 경우 eslint를 사용
+  - 해당부분 prettier로 정렬하는것이 맞는거 같습니다.
+  - autoSave도 하실 분은 하는것이 맞는거 같습니다.
 
 ### # 3 prettier 추가
 
