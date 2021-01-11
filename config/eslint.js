@@ -11,11 +11,11 @@ module.exports = {
     $: true,
   },
   rules: {
-    'eqeqeq': 'warn', // 비교시 삼항연산자만 사용 여부
+    eqeqeq: 'warn', // 비교시 삼항연산자만 사용 여부
     'no-extra-semi': 'warn', // 불필요한 세미콜론 허용여부
-    'indent': ['error', 2], // 인덴트 2
+    indent: ['error', 2], // 인덴트 2
     'no-unused-vars': ['warn'], // 안 쓰는 변수 의 경우 warn
-    'object-curly-spacing': ['warn', 'always', { 'objectsInObjects': false }], // {a:1} -> { a:1 }
+    'object-curly-spacing': ['warn', 'always', { objectsInObjects: false }], // {a:1} -> { a:1 }
     'quote-props': 'off', // {'a': 1} or { a: 1 }
     'eol-last': 'off', // semicolon과 호환씨 문제
     'require-jsdoc': 'off', // jsx와 호환안됨
@@ -31,6 +31,6 @@ module.exports = {
     'max-len': 'off',
     'comma-spacing': ['error', { before: false, after: true }], // 콤마 스페이스
     'new-cap': 'off',
-    'space-infix-ops': ['error', { 'int32Hint': false }],
+    'space-infix-ops': ['error', { int32Hint: false }],
   },
 };
