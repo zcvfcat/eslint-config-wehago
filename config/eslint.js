@@ -33,5 +33,6 @@ module.exports = {
     'comma-spacing': ['warn', { before: false, after: true }], // 콤마 스페이스
     'new-cap': 'off', // 변수명 자유롭게
     'space-infix-ops': ['warn', { int32Hint: false }], // 중위 연산자
+    camelcase: 'off',
   },
 };
