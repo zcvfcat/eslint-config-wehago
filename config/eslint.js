@@ -16,7 +16,9 @@ module.exports = {
     'arrow-parens': 'off', // a => {}, (a)=>{} 변경
     indent: ['off', 2], // indent: ['error', 2], // 인덴트 2
     'no-unused-vars': ['warn'], // 안 쓰는 변수 의 경우 warn
-    'object-curly-spacing': ['warn', 'always', { objectsInObjects: false }], // {a:1} -> { a:1 }
+    // 'object-curly-spacing': ['warn', 'always', { objectsInObjects: false }], // {a:1} -> { a:1 }
+    'object-curly-spacing': 'off', // {a:1} -> { a:1 }
+    'space-before-function-paren': 'off', // 함수 사이 공백
     'quote-props': 'off', // {'a': 1} or { a: 1 }
     'eol-last': 'off', // semicolon과 호환씨 문제
     'require-jsdoc': 'off', // jsx와 호환안됨
@@ -34,5 +36,7 @@ module.exports = {
     'new-cap': 'off', // 변수명 자유롭게
     'space-infix-ops': ['warn', { int32Hint: false }], // 중위 연산자
     camelcase: 'off',
+    'operator-linebreak': 'off',
+    semi: 'off',
   },
 };
