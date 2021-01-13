@@ -13,7 +13,8 @@ module.exports = {
   rules: {
     eqeqeq: 'warn', // 비교시 삼항연산자만 사용 여부
     'no-extra-semi': 'warn', // 불필요한 세미콜론 허용여부
-    indent: ['error', 2], // 인덴트 2
+    'arrow-parens': 'off', // a => {}, (a)=>{} 변경
+    indent: ['off', 2], // indent: ['error', 2], // 인덴트 2
     'no-unused-vars': ['warn'], // 안 쓰는 변수 의 경우 warn
     'object-curly-spacing': ['warn', 'always', { objectsInObjects: false }], // {a:1} -> { a:1 }
     'quote-props': 'off', // {'a': 1} or { a: 1 }
@@ -29,8 +30,8 @@ module.exports = {
     //   },
     // ],
     'max-len': 'off',
-    'comma-spacing': ['error', { before: false, after: true }], // 콤마 스페이스
-    'new-cap': 'off',
-    'space-infix-ops': ['error', { int32Hint: false }],
+    'comma-spacing': ['warn', { before: false, after: true }], // 콤마 스페이스
+    'new-cap': 'off', // 변수명 자유롭게
+    'space-infix-ops': ['warn', { int32Hint: false }], // 중위 연산자
   },
 };
