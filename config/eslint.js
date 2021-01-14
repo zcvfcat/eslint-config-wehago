@@ -35,8 +35,9 @@ module.exports = {
     'comma-spacing': ['warn', { before: false, after: true }], // 콤마 스페이스
     'new-cap': 'off', // 변수명 자유롭게
     'space-infix-ops': ['warn', { int32Hint: false }], // 중위 연산자
-    camelcase: 'off',
-    'operator-linebreak': 'off',
-    semi: 'off',
+    camelcase: 'off', // 카멜케이스
+    'operator-linebreak': 'off', // 중위 연산자
+    semi: 'off', // 세미콜론
+    'key-spacing': 'off', // key: value -> key : value
   },
 };
