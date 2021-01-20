@@ -112,7 +112,8 @@ module.exports = {
     'react/jsx-uses-vars': 'error', // 사용된변수가 미사용으로 잘 못 표시되지 않도록 방지
     'react/jsx-no-undef': 'error', // jsx에 선언되지 않은 변수 허용 안함
     'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }], // 중복 속성 사용 금지
-    'react/jsx-indent-props': ['error', 2], // jsx 속성 indent
+    // 'react/jsx-indent-props': ['error', 2], // jsx 속성 indent
+    'react/jsx-indent-props': 'off', // jsx 속성 indent
     'react/jsx-handler-names': [
       'warn',
       {

@@ -9,7 +9,7 @@ module.exports = {
   root: true,
   globals: {
     $: true,
-    },
+  },
   rules: {
     eqeqeq: 'warn', // 비교시 삼항연산자만 사용 여부
     'no-extra-semi': 'warn', // 불필요한 세미콜론 허용여부
@@ -35,9 +35,10 @@ module.exports = {
     'comma-spacing': ['warn', { before: false, after: true }], // 콤마 스페이스
     'new-cap': 'off', // 변수명 자유롭게
     'space-infix-ops': ['warn', { int32Hint: false }], // 중위 연산자
-    camelcase: 'off', // 카멜케이스
+    'camelcase': ['warn', { properties: 'never'}],
     'operator-linebreak': 'off', // 중위 연산자
-    semi: 'off', // 세미콜론
     'key-spacing': 'off', // key: value -> key : value
+    'no-multi-spaces' : 'warn',
+
   },
 };
