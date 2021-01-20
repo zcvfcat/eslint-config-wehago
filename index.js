@@ -1,6 +1,13 @@
 module.exports = {
   // extends: ['google', './config/@typescript-eslint.js', './config/eslint.js', './config/babel.js', './config/prettier.js', './config/jest.js'],
-  extends: ['google', './config/@typescript-eslint.js', './config/eslint.js', './config/babel.js', './config/prettier.js'],
+  extends: [
+    'google',
+    'plugin:@typescript-eslint/recommended',
+    './config/@typescript-eslint.js',
+    './config/eslint.js',
+    './config/babel.js',
+    './config/prettier.js',
+  ],
   // plugins: ['babel', '@typescript-eslint', 'prettier', 'jest'],
   plugins: ['babel', '@typescript-eslint', 'prettier'],
   parserOptions: {
@@ -16,7 +23,6 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['plugin:@typescript-eslint/recommended'],
       parserOptions: {
         parser: '@typescript-eslint/parser',
         // project: './tsconfig.json',
@@ -26,7 +32,6 @@ module.exports = {
         },
       },
     },
-    // ,
     // {
     //   files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
     //   extends: ['plugin:jest/recommended'],
