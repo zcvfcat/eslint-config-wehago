@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['google', './config/@typescript-eslint.js','./config/eslint.js', './config/babel.js', './config/prettier.js', './config/jest.js'],
+  extends: ['google', './config/@typescript-eslint.js', './config/eslint.js', './config/babel.js', './config/prettier.js', './config/jest.js'],
   plugins: ['babel', '@typescript-eslint', 'prettier', 'jest'],
   parserOptions: {
     parser: 'babel-eslint',
