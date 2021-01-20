@@ -13,7 +13,7 @@ module.exports = {
     // '@typescript-eslint/space-before-function-paren': 'off',
     // '@typescript-eslint/space-infix-ops': 'off',
     // '@typescript-eslint/type-annotation-spacing': 'off',
-    '@typescript-eslint/indent': 'error',
+    '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',

@@ -9,7 +9,7 @@ module.exports = {
   root: true,
   globals: {
     $: true,
-  },
+    },
   rules: {
     eqeqeq: 'warn', // 비교시 삼항연산자만 사용 여부
     'no-extra-semi': 'warn', // 불필요한 세미콜론 허용여부
