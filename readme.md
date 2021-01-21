@@ -4,7 +4,8 @@
 > GOOGLE ESLINT 참고 [shareable config](https://github.com/google/eslint-config-google.git)  
 > GOOGLE STYLE [Google JavaScript style guide (ES2015+ version)](https://google.github.io/styleguide/jsguide.html)  
 > REACT-APP ESLINT 참고 [shareable config](https://www.npmjs.com/package/eslint-config-react-app)  
-> 참고자료 [POIEMAWEB](https://poiemaweb.com/eslint)
+> 참고자료 [POIEMAWEB](https://poiemaweb.com/eslint)  
+> [PRETTIER SCHEMA](http://json.schemastore.org/prettierrc)
 
 - eslint-config-wehago 설치
 
@@ -173,12 +174,12 @@ eslint 혼자서는 설정을 할 수 없음
 webpack의 경우 : ${root}/${webpack.config.js} [configuration resolve](https://webpack.js.org/configuration/resolve/)
 
 ```js
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   //...
   resolve: {
-    modules: [path.resolve(__dirname, "src"), "node_modules"],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
 };
 ```

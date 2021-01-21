@@ -35,10 +35,11 @@ module.exports = {
     'comma-spacing': ['warn', { before: false, after: true }], // 콤마 스페이스
     'new-cap': 'off', // 변수명 자유롭게
     'space-infix-ops': ['warn', { int32Hint: false }], // 중위 연산자
-    'camelcase': ['warn', { properties: 'never'}],
+    camelcase: ['warn', { properties: 'never' }],
     'operator-linebreak': 'off', // 중위 연산자
     'key-spacing': 'off', // key: value -> key : value
-    'no-multi-spaces' : 'warn',
-
+    'no-multi-spaces': 'warn',
+    'no-trailing-spaces': 'off', // 비어있는 공간이 필요할 경우가 있음
+    'no-empty-function': 'off', // 비어있는 펑션이 필요함
   },
 };
