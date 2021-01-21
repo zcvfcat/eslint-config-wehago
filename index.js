@@ -1,5 +1,4 @@
 module.exports = {
-  // extends: ['google', './config/@typescript-eslint.js', './config/eslint.js', './config/babel.js', './config/prettier.js', './config/jest.js'],
   extends: [
     'google',
     'plugin:@typescript-eslint/recommended',
@@ -8,7 +7,6 @@ module.exports = {
     './config/babel.js',
     './config/prettier.js',
   ],
-  // plugins: ['babel', '@typescript-eslint', 'prettier', 'jest'],
   plugins: ['babel', '@typescript-eslint', 'prettier'],
   parserOptions: {
     parser: 'babel-eslint',
@@ -25,18 +23,12 @@ module.exports = {
       files: ['*.ts', '*.tsx'],
       parserOptions: {
         parser: '@typescript-eslint/parser',
-        // project: './tsconfig.json',
         ecmaFeatures: {
           globalReturn: true,
           jsx: true,
         },
       },
     },
-    // {
-    //   files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
-    //   extends: ['plugin:jest/recommended'],
-    //   env: { 'jest/globals': true },
-    // },
   ],
   settings: {
     'import/resolver': {

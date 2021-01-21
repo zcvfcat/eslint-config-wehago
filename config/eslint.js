@@ -41,5 +41,6 @@ module.exports = {
     'no-multi-spaces': 'warn',
     'no-trailing-spaces': 'off', // 비어있는 공간이 필요할 경우가 있음
     'no-empty-function': 'off', // 비어있는 펑션이 필요함
+    'no-use-before-define': 'off', // import react 버전업시 버그 발견 
   },
 };
