@@ -20,7 +20,6 @@ module.exports = {
     'object-curly-spacing': 'off', // {a:1} -> { a:1 }
     'space-before-function-paren': 'off', // 함수 사이 공백
     'quote-props': 'off', // {'a': 1} or { a: 1 }
-    'eol-last': 'off', // semicolon과 호환씨 문제
     'require-jsdoc': 'off', // jsx와 호환안됨
     'valid-jsdoc': 'off', // jsdoc 문서 작성시 오류 죽이기
     // 'max-len': [
@@ -42,5 +41,9 @@ module.exports = {
     'no-trailing-spaces': 'off', // 비어있는 공간이 필요할 경우가 있음
     'no-empty-function': 'off', // 비어있는 펑션이 필요함
     'no-use-before-define': 'off', // import react 버전업시 버그 발견 
+    'no-multiple-empty-lines': ['warn', { 'max': 2, 'maxEOF': 0 }], // 코드 두줄 이상 띄우면 warn
+    'eol-last': 'warn', // eol - 문장의 끝 한 칸 띄우기
+    'semi': 'warn', // semi 넣기
+    'semi-style': ['warn', 'last'], // semi는 뒤에
   },
 };
