@@ -143,7 +143,8 @@ module.exports = {
         message: '',
       },
     ],
-    'react/jsx-one-expression-per-line': ['error', { allow: 'single-child' }], // 라인당 하나의 jsx
+    'react/jsx-one-expression-per-line':'off',
+    // 'react/jsx-one-expression-per-line': ['warn', { allow: 'single-child' }], // 라인당 하나의 jsx
     // 'react/jsx-indent': ['error', 2], // jsx 태그 indent
   },
 };
