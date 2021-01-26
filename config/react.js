@@ -125,15 +125,15 @@ module.exports = {
     ],
     'react/jsx-closing-tag-location': 'error', // JSX Tag 닫는 위치 확인
     'react/jsx-closing-bracket-location': ['error', 'line-aligned'], // 여는 태그가 포함 된 줄과 정렬
-    'react/button-has-type': [
-      'error',
-      {
-        // button 태그 type 명시 필수여부
-        button: true,
-        submit: true,
-        reset: false,
-      },
-    ],
+    // 'react/button-has-type': [
+    //   'error',
+    //   {
+    //     // button 태그 type 명시 필수여부
+    //     button: true,
+    //     submit: true,
+    //     reset: false,
+    //   },
+    // ],
     'react/boolean-prop-naming': [
       'off',
       {
