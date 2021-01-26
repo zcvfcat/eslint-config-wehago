@@ -144,7 +144,7 @@ module.exports = {
       },
     ],
     // 'react/jsx-one-expression-per-line':'off',
-    'react/jsx-one-expression-per-line': ['warn', { allow: 'single-child' }], // 라인당 하나의 jsx
+    // 'react/jsx-one-expression-per-line': ['warn', { allow: 'single-child' }], // 라인당 하나의 jsx
     'react/jsx-indent': ['warn', 2], // jsx 태그 indent
   },
 };
