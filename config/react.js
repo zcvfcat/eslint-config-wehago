@@ -94,27 +94,27 @@ module.exports = {
     'react/no-typos': 'error', // 일반적인 오타 방지
     'react/no-deprecated': 'error', // 더 이상사용되지 않는 메서드 사용방지
     'react/no-danger': 'error', // dangerous JSX 사용 금지
-    'react/no-array-index-key': 'error', // 키에서 배열인덱스 사용 방지
+    'react/no-array-index-key': 'warn', // 키에서 배열인덱스 사용 방지
     'react/no-access-state-in-setstate': 'error', // this.setState 내에서 this.state 사용 방지
-    // 'react/jsx-wrap-multilines': [
-    //   'error',
-    //   {
-    //     // 여러줄 jsx 주위에 괄호 누락 방지
-    //     declaration: 'parens-new-line',
-    //     assignment: 'parens-new-line',
-    //     return: 'parens-new-line',
-    //     arrow: 'parens-new-line',
-    //     condition: 'parens-new-line',
-    //     logical: 'parens-new-line',
-    //     prop: 'parens-new-line',
-    //   },
-    // ],
-    'react/jsx-wrap-multilines': 'off',
+    'react/jsx-wrap-multilines': [
+      'warn',
+      {
+        // 여러줄 jsx 주위에 괄호 누락 방지
+        declaration: 'parens-new-line',
+        assignment: 'parens-new-line',
+        return: 'parens-new-line',
+        arrow: 'parens-new-line',
+        condition: 'parens-new-line',
+        logical: 'parens-new-line',
+        prop: 'parens-new-line',
+      },
+    ],
+    // 'react/jsx-wrap-multilines': 'off',
     'react/jsx-uses-vars': 'error', // 사용된변수가 미사용으로 잘 못 표시되지 않도록 방지
     'react/jsx-no-undef': 'error', // jsx에 선언되지 않은 변수 허용 안함
     'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }], // 중복 속성 사용 금지
-    // 'react/jsx-indent-props': ['error', 2], // jsx 속성 indent
     'react/jsx-indent-props': 'off', // jsx 속성 indent
+    // 'react/jsx-indent-props': ['warn', { indentMode: 2, ignoreTernaryOperator: true}], // jsx 속성 indent
     'react/jsx-handler-names': [
       'warn',
       {
@@ -123,8 +123,8 @@ module.exports = {
         eventHandlerPropPrefix: 'on',
       },
     ],
-    'react/jsx-closing-tag-location': 'error', // JSX Tag 닫는 위치 확인
-    'react/jsx-closing-bracket-location': ['error', 'line-aligned'], // 여는 태그가 포함 된 줄과 정렬
+    'react/jsx-closing-tag-location': 'warn', // JSX Tag 닫는 위치 확인
+    'react/jsx-closing-bracket-location': ['warn', 'line-aligned'], // 여는 태그가 포함 된 줄과 정렬
     // 'react/button-has-type': [
     //   'error',
     //   {
@@ -134,17 +134,17 @@ module.exports = {
     //     reset: false,
     //   },
     // ],
-    'react/boolean-prop-naming': [
-      'off',
-      {
-        // bool 변수 이름 앞에 is 사용여부
-        propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'],
-        rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
-        message: '',
-      },
-    ],
+    // 'react/boolean-prop-naming': [
+    //   'off',
+    //   {
+    //     // bool 변수 이름 앞에 is 사용여부
+    //     propTypeNames: ['bool', 'mutuallyExclusiveTrueProps'],
+    //     rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+',
+    //     message: '',
+    //   },
+    // ],
     // 'react/jsx-one-expression-per-line':'off',
-    // 'react/jsx-one-expression-per-line': ['warn', { allow: 'single-child' }], // 라인당 하나의 jsx
+    'react/jsx-one-expression-per-line': ['warn', { allow: 'single-child' }], // 라인당 하나의 jsx
     'react/jsx-indent': ['warn', 2], // jsx 태그 indent
   },
 };
