@@ -14,7 +14,7 @@ module.exports = {
     eqeqeq: 'warn', // 비교시 삼항연산자만 사용 여부
     'no-extra-semi': 'warn', // 불필요한 세미콜론 허용여부
     'arrow-parens': 'off', // a => {}, (a)=>{} 변경
-    indent: ['warn', 2], // indent: ['error', 2], // 인덴트 2
+    // indent: ['warn', 2], // indent: ['error', 2], // 인덴트 2
     'no-unused-vars': ['warn'], // 안 쓰는 변수 의 경우 warn
     // 'object-curly-spacing': ['warn', 'always', { objectsInObjects: false }], // {a:1} -> { a:1 }
     'object-curly-spacing': 'off', // {a:1} -> { a:1 }
