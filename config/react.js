@@ -96,19 +96,19 @@ module.exports = {
     'react/no-danger': 'error', // dangerous JSX 사용 금지
     'react/no-array-index-key': 'warn', // 키에서 배열인덱스 사용 방지
     'react/no-access-state-in-setstate': 'error', // this.setState 내에서 this.state 사용 방지
-    'react/jsx-wrap-multilines': [
-      'warn',
-      {
-        // 여러줄 jsx 주위에 괄호 누락 방지
-        declaration: 'parens-new-line',
-        assignment: 'parens-new-line',
-        return: 'parens-new-line',
-        arrow: 'parens-new-line',
-        condition: 'parens-new-line',
-        logical: 'parens-new-line',
-        prop: 'parens-new-line',
-      },
-    ],
+    // 'react/jsx-wrap-multilines': [
+    //   'warn',
+    //   {
+    //     // 여러줄 jsx 주위에 괄호 누락 방지
+    //     declaration: 'parens-new-line',
+    //     assignment: 'parens-new-line',
+    //     return: 'parens-new-line',
+    //     arrow: 'parens-new-line',
+    //     condition: 'parens-new-line',
+    //     logical: 'parens-new-line',
+    //     prop: 'parens-new-line',
+    //   },
+    // ],
     // 'react/jsx-wrap-multilines': 'off',
     'react/jsx-uses-vars': 'error', // 사용된변수가 미사용으로 잘 못 표시되지 않도록 방지
     'react/jsx-no-undef': 'error', // jsx에 선언되지 않은 변수 허용 안함
@@ -144,7 +144,7 @@ module.exports = {
     //   },
     // ],
     // 'react/jsx-one-expression-per-line':'off',
-    'react/jsx-one-expression-per-line': ['warn', { allow: 'single-child' }], // 라인당 하나의 jsx
+    // 'react/jsx-one-expression-per-line': ['warn', { allow: 'single-child' }], // 라인당 하나의 jsx
     // 'react/jsx-indent': ['warn', 2], // jsx 태그 indent
   },
 };
