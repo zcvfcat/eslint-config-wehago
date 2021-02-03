@@ -123,8 +123,8 @@ module.exports = {
         eventHandlerPropPrefix: 'on',
       },
     ],
-    'react/jsx-closing-tag-location': 'warn', // JSX Tag 닫는 위치 확인
-    'react/jsx-closing-bracket-location': ['warn', 'line-aligned'], // 여는 태그가 포함 된 줄과 정렬
+    // 'react/jsx-closing-tag-location': 'warn', // JSX Tag 닫는 위치 확인
+    // 'react/jsx-closing-bracket-location': ['warn', 'line-aligned'], // 여는 태그가 포함 된 줄과 정렬
     // 'react/button-has-type': [
     //   'error',
     //   {
