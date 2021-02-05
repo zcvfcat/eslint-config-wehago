@@ -1,7 +1,7 @@
 module.exports = {
   rules: {
     // "jsx-a11y/accessible-emoji": "off",
-    // "jsx-a11y/alt-text": "off",
+    // 'jsx-a11y/alt-text': 'off',
     // "jsx-a11y/anchor-has-content": "off",
     // "jsx-a11y/anchor-is-valid": "off",
     // "jsx-a11y/aria-activedescendant-has-tabindex": "off",
@@ -14,7 +14,7 @@ module.exports = {
     // "jsx-a11y/control-has-associated-label": "off",
     // "jsx-a11y/heading-has-content": "off",
     // "jsx-a11y/html-has-lang": "off",
-    // "jsx-a11y/iframe-has-title": "off",
+    'jsx-a11y/iframe-has-title': 'off',
     // "jsx-a11y/img-redundant-alt": "off",
     // "jsx-a11y/interactive-supports-focus": "off",
     // "jsx-a11y/label-has-associated-control": "off",
