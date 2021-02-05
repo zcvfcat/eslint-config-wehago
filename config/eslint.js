@@ -30,21 +30,24 @@ module.exports = {
     //     ignoreUrls: true,
     //   },
     // ],
-    'max-len': 'off',
-    'comma-spacing': ['warn', { before: false, after: true }], // 콤마 스페이스
+    'max-len': 'off', // prettier 해줌
+    'comma-spacing': ['off', { before: false, after: true }], // 콤마 스페이스 prettier 해줌
     'new-cap': 'off', // 변수명 자유롭게
     'space-infix-ops': ['warn', { int32Hint: false }], // 중위 연산자
     camelcase: ['warn', { properties: 'never' }],
-    'operator-linebreak': 'off', // 중위 연산자
+    'operator-linebreak': 'off', // 중위 연산자 prettier 해줌
     'key-spacing': 'off', // key: value -> key : value
     'no-multi-spaces': 'warn',
-    'no-trailing-spaces': 'off', // 비어있는 공간이 필요할 경우가 있음
+    'no-trailing-spaces': 'off', // 비어있는 공간이 필요할 경우가 있음 prettier 해줌
     'no-empty-function': 'off', // 비어있는 펑션이 필요함
-    'no-use-before-define': 'off', // import react 버전업시 버그 발견
-    'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 0 }], // 코드 두줄 이상 띄우면 warn
-    'eol-last': 'warn', // eol - 문장의 끝 한 칸 띄우기
-    semi: 'warn', // semi 넣기
-    'semi-style': ['warn', 'last'], // semi는 뒤에
-    indent: 'off',
+    'no-use-before-define': 'off', // import react 버전업시 버그 발견 prettier 해줌
+    'no-multiple-empty-lines': ['off', { max: 2, maxEOF: 0 }], // 코드 두줄 이상 띄우면 warn prettier 해줌
+    'eol-last': 'off', // eol - 문장의 끝 한 칸 띄우기 //prettier 해줌
+    semi: 'warn', // semi 넣기 //prettier 해줌
+    'semi-style': ['off', 'last'], // semi는 뒤에 // prettier 해줌
+    indent: 'off', // prettier 해줌
+    'spaced-comment': 'off',
+    'padded-blocks': 'off',
+    'prefer-const': ['off'], // let을 자동적으로 고침, 해당내역 지만씨 요청,
   },
 };
