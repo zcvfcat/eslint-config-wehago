@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'google',
-    'plugin:@typescript-eslint/recommended',
+    // 'plugin:@typescript-eslint/recommended',
     './config/@typescript-eslint.js',
     './config/eslint.js',
     './config/babel.js',
