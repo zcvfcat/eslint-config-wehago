@@ -2,12 +2,12 @@ module.exports = {
   extends: [
     'google',
     // 'plugin:@typescript-eslint/recommended',
-    './config/@typescript-eslint.js',
+    // './config/@typescript-eslint.js',
     './config/eslint.js',
     './config/babel.js',
-    './config/prettier.js',
+    // './config/prettier.js',
   ],
-  plugins: ['babel', '@typescript-eslint', 'prettier'],
+  plugins: ['babel', 'prettier'],
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2021,
@@ -20,9 +20,13 @@ module.exports = {
   },
   overrides: [
     {
+      parser: '@typescript-eslint/parser',
+      extends: ['./config/@typescript-eslint.js'],
+      plugins: ['@typescript-eslint/eslint-plugin'],
       files: ['*.ts', '*.tsx'],
       parserOptions: {
-        parser: '@typescript-eslint/parser',
+        project: 'tsconfig.json',
+        sourceType: 'module',
         ecmaFeatures: {
           globalReturn: true,
           jsx: true,
