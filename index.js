@@ -7,7 +7,8 @@ module.exports = {
     './config/babel.js',
     // './config/prettier.js',
   ],
-  plugins: ['babel', 'prettier'],
+  // plugins: ['babel', 'prettier'],
+  plugins: ['babel'],
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2021,
@@ -25,7 +26,7 @@ module.exports = {
       plugins: ['@typescript-eslint/eslint-plugin'],
       files: ['*.ts', '*.tsx'],
       parserOptions: {
-        project: 'tsconfig.json',
+        // project: 'tsconfig.json',
         sourceType: 'module',
         ecmaFeatures: {
           globalReturn: true,
