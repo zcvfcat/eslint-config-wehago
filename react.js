@@ -6,5 +6,5 @@ module.exports = {
     './config/react-hooks.js',
     './config/react.js',
   ],
-  plugins: ['babel', '@typescript-eslint', 'react', 'react-hooks', 'jsx-a11y', 'prettier'],
+  plugins: ['react', 'react-hooks', 'jsx-a11y'],
 };
