@@ -15,7 +15,7 @@ module.exports = {
     'no-extra-semi': 'warn', // 불필요한 세미콜론 허용여부
     'arrow-parens': 'off', // a => {}, (a)=>{} 변경
     // indent: ['warn', 2], // indent: ['error', 2], // 인덴트 2
-    'no-unused-vars': ['warn'], // 안 쓰는 변수 의 경우 warn
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_', ignoreRestSiblings: true }], // 안 쓰는 변수 의 경우 warn
     // 'object-curly-spacing': ['warn', 'always', { objectsInObjects: false }], // {a:1} -> { a:1 }
     'object-curly-spacing': 'off', // {a:1} -> { a:1 }
     'space-before-function-paren': 'off', // 함수 사이 공백

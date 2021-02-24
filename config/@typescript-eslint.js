@@ -12,7 +12,7 @@ module.exports = {
     // '@typescript-eslint/semi': 'off',
     // '@typescript-eslint/space-before-function-paren': 'off',
     // '@typescript-eslint/space-infix-ops': 'off',
-    // '@typescript-eslint/type-annotation-spacing': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', ignoreRestSiblings: true }],
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-var-requires': 'off',
@@ -32,7 +32,6 @@ module.exports = {
     ],
   },
 };
-
 
 //'@typescript-eslint/adjacent-overload-signatures': 'error',
 //'@typescript-eslint/ban-ts-comment': 'error',
