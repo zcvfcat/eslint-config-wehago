@@ -30,6 +30,10 @@ module.exports = {
         typedefs: false,
       },
     ],
+    'no-unused-vars': 'off',
+    'no-explicit-any': 'off',
+    'no-empty-function': 'off',
+    'no-use-before-define': 'off',
   },
 };
 
