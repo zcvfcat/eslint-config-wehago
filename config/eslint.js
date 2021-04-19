@@ -42,5 +42,6 @@ module.exports = {
     'padded-blocks': 'off',
     'prefer-const': ['off'], // let을 자동적으로 고침, 해당내역 지만씨 요청,
     'no-invalid-this': 'off', // this를 생성자 함수에서 인수로 사용 허용
+    quotes: ['off'],
   },
 };
